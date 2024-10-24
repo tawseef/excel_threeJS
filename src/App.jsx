@@ -1,12 +1,15 @@
-import './App.css'
+import "./App.css";
+import Dashboard from "./components/Dashboard";
+import { DataProvider } from "./components/context";
 
 function App() {
-
   return (
-      <div>
-        MY APP
+    <div>
+      <DataProvider>
+        <Dashboard />
+      </DataProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
